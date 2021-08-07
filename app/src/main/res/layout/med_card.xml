@@ -1,0 +1,508 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app = "http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    android:padding="10dp">
+
+    <com.ramotion.foldingcell.FoldingCell
+        android:id="@+id/folding_cell"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:animationDuration="1000"
+        app:backSideColor="@color/primary"
+        app:additionalFlipsCount="3"
+        app:cameraHeight="30"
+       >
+
+        <FrameLayout
+            android:id="@+id/cell_content_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/card_border"
+            android:visibility="gone"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="160dp"
+                        android:layout_height="110dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/imageView"
+                        android:background="@drawable/card_border"/>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_marginLeft="170dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp">
+
+                        <TextView
+                            android:id="@+id/medicineName"
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:gravity="left|center"
+                            android:paddingStart="10dp"
+                            android:text="Aspirin"
+                            android:textColor="@color/primary"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="35dp"
+                            android:textStyle="bold"
+                            android:gravity="left|center"
+                            android:layout_below="@+id/medicineName"
+                            android:paddingStart="10dp"
+                            android:text="Dosage : "
+                            android:textColor="@color/primary"
+                            android:textSize="17dp" />
+
+                        <TextView
+                            android:id="@+id/dosageMed"
+                            android:layout_width="wrap_content"
+                            android:layout_marginLeft="72dp"
+                            android:gravity="left|center"
+                            android:layout_height="35dp"
+                            android:layout_below="@+id/medicineName"
+                            android:paddingStart="10dp"
+                            android:textColor="@color/primary"
+                            android:textSize="17dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="7dp"
+                            android:gravity="left|center"
+                            android:textStyle="bold"
+                            android:layout_below="@+id/dosageMed"
+                            android:paddingStart="10dp"
+                            android:layout_marginTop="5dp"
+                            android:text="Instruction : "
+                            android:textColor="@color/primary"
+                            android:textSize="17dp" />
+
+                        <TextView
+                            android:id="@+id/instructionMed"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="left|center"
+                            android:layout_marginLeft="97dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_below="@+id/dosageMed"
+                            android:text="Take medicine after eating"
+                            android:paddingStart="10dp"
+                            android:textColor="@color/primary"
+                            android:textSize="17dp" />
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/primary"
+                   />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp">
+
+                    <TextView
+                        android:layout_width="190dp"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:text="Reason for Intake"
+                        android:textSize="17dp"
+                        android:paddingStart="10dp"
+                        android:textColor="@color/primary"
+
+                        />
+                    <TextView
+                        android:layout_width="190dp"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="10dp"
+                        android:textStyle="bold"
+                        android:textSize="17dp"
+                        android:textColor="@color/primary"
+                        android:text="Medicine Form"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="10dp"
+                   >
+
+                    <TextView
+                        android:id="@+id/reasonForIntake"
+                        android:layout_width="190dp"
+                        android:layout_height="wrap_content"
+                        android:text="HeadAche"
+                        android:textSize="15dp"
+                        android:paddingStart="15dp"
+                        android:textColor="@color/primary"
+                        />
+
+                    <TextView
+                        android:id="@+id/formOfMedicine"
+                        android:layout_width="190dp"
+                        android:layout_height="wrap_content"
+                        android:text="Pill"
+                        android:textSize="15dp"
+                        android:paddingStart="15dp"
+                        android:textColor="@color/primary"
+                        />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/primary"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="10dp">
+
+                    <TextView
+                        android:layout_width="190dp"
+                        android:layout_height="wrap_content"
+                        android:text="Start of medicine intake"
+                        android:textSize="17dp"
+                        android:textStyle="bold"
+                        android:paddingStart="10dp"
+                        android:textColor="@color/primary"
+
+                        />
+                    <TextView
+                        android:layout_width="170dp"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:paddingStart="10dp"
+                        android:textSize="17dp"
+                        android:textColor="@color/primary"
+                        android:text="Duration for medicine intake"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="10dp"
+                    >
+
+                    <TextView
+                        android:id="@+id/setStartDate"
+                        android:layout_width="190dp"
+                        android:layout_height="wrap_content"
+                        android:text="21-05-2020"
+                        android:textSize="15dp"
+                        android:paddingStart="15dp"
+                        android:textColor="@color/primary"
+                        />
+
+                    <TextView
+                        android:id="@+id/durationMed"
+                        android:layout_width="190dp"
+                        android:layout_height="wrap_content"
+                        android:text="50 Days"
+                        android:textSize="15dp"
+                        android:paddingStart="15dp"
+                        android:textColor="@color/primary"
+                        />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/primary"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="10dp">
+
+                    <TextView
+                        android:layout_width="190dp"
+                        android:layout_height="wrap_content"
+                        android:text="Is it a daily medication ?"
+                        android:textSize="17dp"
+                        android:textStyle="bold"
+                        android:paddingStart="10dp"
+                        android:textColor="@color/primary"
+
+                        />
+                    <TextView
+                        android:layout_width="170dp"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="10dp"
+                        android:textStyle="bold"
+                        android:textSize="17dp"
+                        android:textColor="@color/primary"
+                        android:text="Other instruction for medicine intake"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="10dp"
+                    >
+
+                    <TextView
+                        android:id="@+id/isEverydayMed"
+                        android:layout_width="190dp"
+                        android:layout_height="wrap_content"
+                        android:text="Yes"
+                        android:textSize="15dp"
+                        android:paddingStart="15dp"
+                        android:textColor="@color/primary"
+                        />
+
+                    <TextView
+                        android:id="@+id/otherInstructionMed"
+                        android:layout_width="190dp"
+                        android:layout_height="wrap_content"
+                        android:text="Not available"
+                        android:textSize="15dp"
+                        android:paddingStart="15dp"
+                        android:textColor="@color/primary"
+                        />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/primary"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp">
+
+                    <TextView
+                        android:layout_width="380dp"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:text="Frequency of medicine intake"
+                        android:textSize="17dp"
+                        android:paddingStart="10dp"
+                        android:textColor="@color/primary"
+
+                        />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="10dp"
+                    >
+
+                    <TextView
+                        android:id="@+id/freqOfMedIntake"
+                        android:layout_width="190dp"
+                        android:layout_height="wrap_content"
+                        android:text="3 Times a day"
+                        android:textSize="15dp"
+                        android:paddingStart="15dp"
+                        android:textColor="@color/primary"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginRight="23dp"
+                    android:layout_marginLeft="23dp"
+                    android:layout_marginBottom="20dp"
+                    >
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+
+                        android:elevation="2dp"
+                        android:background="@color/card_bg"
+                        android:id="@+id/click_id">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="40dp"
+                            android:paddingTop="3dp"
+                            android:text="Intake times"
+                            android:textColor="@color/primary"
+                            android:textSize="16dp" />
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:id="@+id/intakeTimes"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:orientation="vertical"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/cell_title_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="2dp"
+            android:background="@drawable/card_border">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+
+                <TextView
+                    android:id="@+id/medNum"
+                    android:layout_width="100dp"
+                    android:layout_height="160dp"
+                    android:background="@color/primary"
+                    android:gravity="center"
+                    android:text="1"
+                    android:textColor="@color/white"
+                    android:textSize="30dp" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="100dp"
+                    android:layout_height="160dp"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
+                    android:gravity="center"
+                    android:background="#85C5E0FA">
+
+                    <TextView
+                        android:id="@+id/medicineNameTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:text="Medicine Name"
+                        android:gravity="left|center"
+                        android:textColor="@color/primary"
+                        android:textSize="17dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:textStyle="bold"
+                        android:layout_height="40dp"
+                        android:layout_below="@+id/medicineNameTitle"
+                        android:gravity="left|center"
+                        android:text="Dosage : "
+                        android:textColor="@color/primary"
+                        android:textSize="17dp" />
+
+                    <TextView
+                        android:id="@+id/dosageMedTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="72dp"
+                        android:gravity="left|center"
+                        android:layout_below="@+id/medicineNameTitle"
+                        android:text="1"
+                        android:textColor="@color/primary"
+                        android:textSize="17dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_below="@+id/dosageMedTitle"
+                        android:gravity="left|center"
+                        android:text="Instruction : "
+                        android:textStyle="bold"
+                        android:textColor="@color/primary"
+                        android:textSize="17dp" />
+
+                    <TextView
+                        android:id="@+id/instructionMedTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="97dp"
+                        android:text="doesn't matter"
+                        android:gravity="left|center"
+                        android:layout_below="@+id/dosageMedTitle"
+                        android:textColor="@color/primary"
+                        android:textSize="17dp" />
+
+                    <ImageButton
+                        android:id="@+id/deleteMed"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:background="@drawable/ic_baseline_delete_24"
+                        android:layout_below="@+id/instructionMedTitle"
+                        android:layout_marginLeft="220dp"
+                        />
+
+
+                </RelativeLayout>
+            </RelativeLayout>
+
+
+        </FrameLayout>
+
+    </com.ramotion.foldingcell.FoldingCell>
+
+</LinearLayout>

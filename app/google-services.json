@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "754311119430",
+    "firebase_url": "https://mediguide-aea92-default-rtdb.firebaseio.com",
+    "project_id": "mediguide-aea92",
+    "storage_bucket": "mediguide-aea92.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:754311119430:android:db575145b70b3502140047",
+        "android_client_info": {
+          "package_name": "com.example.mediguide"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "754311119430-u9kiro4526bon2pjqg1b7q2r9onvtv10.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBMa_3Q7Uut9_6PlPGoCfZdOVJWYr8jkLA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "754311119430-u9kiro4526bon2pjqg1b7q2r9onvtv10.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:754311119430:android:23e2c7fce51c9cc5140047",
+        "android_client_info": {
+          "package_name": "com.example.trial1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "754311119430-u9kiro4526bon2pjqg1b7q2r9onvtv10.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBMa_3Q7Uut9_6PlPGoCfZdOVJWYr8jkLA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "754311119430-u9kiro4526bon2pjqg1b7q2r9onvtv10.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

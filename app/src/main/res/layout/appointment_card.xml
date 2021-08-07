@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Front Layout Goes Here -->
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cell_title_view"
+    android:layout_width="350dp"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="25dp"
+    android:layout_marginTop="25dp"
+    android:background="@drawable/card_border"
+    android:padding="3dp">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/medNum"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@color/primary"
+            android:gravity="center"
+            android:text="1"
+            android:textColor="@color/white"
+            android:textSize="30dp" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/appointmentTitle"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:paddingStart="20dp"
+                android:paddingTop="7dp"
+                android:text="Appointment Title"
+                android:textColor="@color/primary"
+                android:textSize="22dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/appointmentDate"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/appointmentTitle"
+                android:paddingStart="20dp"
+                android:paddingTop="7dp"
+                android:text="Date : 21:04:2021"
+                android:textColor="@color/primary"
+                android:textSize="20dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="100dp"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/hospitalName"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:paddingStart="20dp"
+                android:paddingTop="7dp"
+                android:text="Hospital : hospital_name"
+                android:textColor="@color/primary"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/doctorName"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/hospitalName"
+                android:paddingStart="20dp"
+                android:paddingTop="7dp"
+                android:text="Doctor : Doctor name"
+                android:textColor="@color/primary"
+                android:textSize="20dp"
+                />
+
+            <TextView
+                android:id="@+id/appointmentTime"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="100dp"
+                android:paddingStart="20dp"
+                android:paddingTop="7dp"
+                android:text="Timimgs : 9:45"
+                android:textColor="@color/primary"
+                android:textSize="20dp"
+                />
+
+            <ImageButton
+                android:id="@+id/deleteAppointment"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:background="@drawable/ic_baseline_delete_24"
+                android:layout_below="@+id/doctorName"
+                android:layout_marginLeft="280dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="20dp"
+                />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+</FrameLayout>

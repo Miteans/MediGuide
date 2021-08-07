@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">Mediguide</string>
+    <string name="appointment_details">Appointment Details</string>
+    <string name="appointment_title">Appointment title</string>
+    <string name="would_you_like_to_set_reminder">would you like to set reminder</string>
+    <string name="top_icon">TOP ICON</string>
+    <string name="name">Name</string>
+    <string name="email">Email</string>
+    <string name="phone">Phone Number</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="login">LOGIN</string>
+    <string name="signup">Sign Up</string>
+    <string name="forgot_password">FORGOT PASSWORD?</string>
+    <string name="or">OR</string>
+    <string name="new_user_register_now">New User? <u>Register Now</u></string>
+    <string name="todo">TODO</string>
+    <string name="already_have_an_account">Already Have an Account?</string>
+    <string name="register_now">Here is your first step with us!</string>
+
+    <string name="email_error">Please enter a email address</string>
+    <string name="error_invalid_email">Email is not valid</string>
+    <string name="password_error">Please enter a password</string>
+    <string name="error_invalid_password">Please enter a minimum password of 6 characters</string>
+    <string name="confirm_password_error">Please confirm your password</string>
+    <string name="error_password_not_confirmed">Please re-enter the password to confirm</string>
+    <string name="name_error">Please enter your name</string>
+    <string name="phone_error">Please enter a phone number</string>
+    <string name="select_date">Select Date</string>
+    <string name="hospital_name">Hospital Name</string>
+    <string name="doctor_name">Doctor Name</string>
+    <string name="select_time">Select Time</string>
+    <string name="appoint_req">Please fill below appointment details with doctor</string>
+
+    <string name="about">About Us</string>
+    <string name="step">Steps to use device</string>
+    <string name="change_pass">Change Password</string>
+    <string name="logout">Logout</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="required">This field is required</string>
+    <string name="med_not_found">No medication details found!</string>
+    <string name="appointment_not_found">No appointment details found!</string>
+
+</resources>
